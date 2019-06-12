@@ -22,8 +22,8 @@ function nowServing(line) {
 }
 } 
 
-function takeANumber(line,linelength){
-  line.push(line);
+function takeANumber(line){
+  line.push(linelength);
   
   
 
