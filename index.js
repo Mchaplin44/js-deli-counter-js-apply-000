@@ -4,29 +4,29 @@ function currentLine (line){
   if(!line.length) {
 return "The line is currently empty.";  
   }
-  var lineNamesandNumbers = [];
+  var lineNumbers = [];
   
   for(var i=0;i<line.length; i++) {
-    lineNamesandNumbers.push(i+1 + ". "+ line[i]); }
+    lineNumbers.push(i+1 + ". "+ line[i]); }
     
-  return "The line is currently: " + lineNamesandNumbers.join(', ');
+  return "The line is currently: " + lineNumbers.join(', ');
 }
 
 function nowServing(line) {
   if(!line.length) { 
     console.log("There is nobody waiting to be served!")
-return "There is nobody waiting to be served!"
+    return "There is nobody waiting to be served!"
 } else { 
   
-  return "Currently serving " + lineNamesandNumbers .shift() + ".";
+  return "Currently serving " + lineNumbers .shift() + ".";
 }
 } 
 
-function takeANumber(line,name){
-  line.push(name);
+function takeANumber(line,linelength){
+  line.push(line);
   
   
 
-  return "Welcome, " + name + ". You are number " + line.length +  " in line.";
+  return "Welcome, " +  " You are number " + line.length +  " in line.";
 }
 
